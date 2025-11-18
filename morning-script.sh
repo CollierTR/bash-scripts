@@ -41,3 +41,4 @@ clear
 echo "Take today by storm!"
 echo " "
 read -p "Press enter to continue..."
+clear
