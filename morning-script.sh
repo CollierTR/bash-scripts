@@ -66,6 +66,22 @@ echo ""
 read -p "Press enter to continue..."
 
 clear
+typing=(
+  "https://monkeytype.com"
+  "https://www.typelit.io/"
+  "https://bibletyper.app/myplan"
+  "https://10fastfingers.com/top1000#top1000"
+)
+selected_site="${typing[RANDOM % ${#typing[@]}]}"
+echo "Opening ${selected_site} for typing practice..."
+/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe "$selected_site"
+echo ""
+read -p "Press enter to continue..."
+
+clear
+echo "Opening Newsboat..."
+newsboat &&
+  clear
 echo "Take today by storm!" | lolcat
 echo " "
 read -p "Press enter to continue..."
