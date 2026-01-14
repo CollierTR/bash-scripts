@@ -1,3 +1,8 @@
+#!/bin/bash
+
+TODAY=$(date +"%Y-%m-%d")
+LOG_FILE="$HOME/notebook/daily-notes/$TODAY.md"
+
 append_md_list() {
   local input="$1"
   local target_file="$2"
@@ -36,12 +41,9 @@ clear
 echo " "
 echo "Daily Log: list logs seperated by commas"
 read LOGS
-LOG_FILE="$HOME/notebook/daily-log.md"
-TODAY=$(date +"%B %d, %Y")
-echo "# $TODAY" >>"$LOG_FILE"
-echo "**Day Rating: $DAY_RATING**" >>"$LOG_FILE"
 append_md_list "$LOGS" "$LOG_FILE"
 echo " " >>"$LOG_FILE"
+echo "**Day Rating: $DAY_RATING**" >>"$LOG_FILE"
 
 clear
 echo " "
