@@ -47,6 +47,13 @@ echo "**Day Rating: $DAY_RATING**" >>"$LOG_FILE"
 
 clear
 echo " "
+echo "Any Meme Ideas?"
+echo " "
+read -p "Press enter to continue..."
+
+
+clear
+echo " "
 echo "Write a to-do list for tommorow."
 echo " "
 read -p "Press enter to continue..."
