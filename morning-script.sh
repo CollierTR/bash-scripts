@@ -28,6 +28,11 @@ echo " "
 read -p "Press enter to continue..."
 
 clear
+echo "Put phone in an area away from desk to improve concentration"
+echo " "
+read -p "Press enter to continue..."
+
+clear
 echo "Prepare today's calendar"
 echo " "
 read -p "Press enter to continue..."
