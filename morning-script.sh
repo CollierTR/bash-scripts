@@ -10,25 +10,7 @@ echo $BIBLE_INPUT >~/.bash-scripts/cache/morning-script.txt
 bible $BIBLE_INPUT | less
 
 clear
-echo "What is something you could do today that would be high signal and be a needle mover for personal goals?"
-read ANSWER
-clear
-echo "What is something you could do today that would be high signal and be a needle mover for Bonnie related goals?"
-read BONNIE_ANSWER
-clear
-echo "Add this to your goals for the day."
-echo $ANSWER | lolcat
-echo $BONNIE_ANSWER | lolcat
-echo " "
-read -p "Press enter to continue..."
-
-clear
 echo "Review Todoist"
-echo " "
-read -p "Press enter to continue..."
-
-clear
-echo "Put phone in an area away from desk to improve concentration"
 echo " "
 read -p "Press enter to continue..."
 
@@ -71,10 +53,15 @@ echo ""
 read -p "Press enter to continue..."
 
 clear
+echo "Put phone in an area away from desk to improve concentration"
+echo " "
+read -p "Press enter to continue..."
+
+clear
 typing=(
   "https://monkeytype.com"
-  "https://www.typelit.io/"
-  "https://bibletyper.app/myplan"
+  #"https://www.typelit.io/"
+  #"https://bibletyper.app/myplan"
   "https://10fastfingers.com/top1000#top1000"
 )
 selected_site="${typing[RANDOM % ${#typing[@]}]}"
@@ -86,7 +73,9 @@ read -p "Press enter to continue..."
 clear
 echo "Opening Newsboat..."
 newsboat &&
-  clear
+
+
+clear
 echo "Take today by storm!" | lolcat
 echo " "
 read -p "Press enter to continue..."

@@ -22,6 +22,20 @@ append_md_list() {
 
 clear
 echo " "
+echo "Daily Log: list logs seperated by commas"
+read LOGS
+append_md_list "$LOGS" "$LOG_FILE"
+echo " " >>"$LOG_FILE"
+echo "**Day Rating: $DAY_RATING**" >>"$LOG_FILE"
+
+clear
+echo " "
+echo "Write a to-do list for tommorow."
+echo " "
+read -p "Press enter to continue..."
+
+clear
+echo " "
 echo "Clean up the digital plane"
 echo " "
 read -p "Press enter to continue..."
@@ -39,22 +53,7 @@ read DAY_RATING
 
 clear
 echo " "
-echo "Daily Log: list logs seperated by commas"
-read LOGS
-append_md_list "$LOGS" "$LOG_FILE"
-echo " " >>"$LOG_FILE"
-echo "**Day Rating: $DAY_RATING**" >>"$LOG_FILE"
-
-clear
-echo " "
 echo "Any Meme Ideas?"
-echo " "
-read -p "Press enter to continue..."
-
-
-clear
-echo " "
-echo "Write a to-do list for tommorow."
 echo " "
 read -p "Press enter to continue..."
 
