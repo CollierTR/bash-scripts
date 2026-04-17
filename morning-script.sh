@@ -4,9 +4,9 @@ clear
 figlet "Good morning!" | lolcat
 
 echo "What will you be reading today? Last time you read:"
-cat ~/.bash-scripts/cache/morning-script.txt
+cat ~/.scripts/cache/morning-script.txt
 read BIBLE_INPUT
-echo $BIBLE_INPUT >~/.bash-scripts/cache/morning-script.txt
+echo $BIBLE_INPUT >~/.scripts/cache/morning-script.txt
 bible $BIBLE_INPUT | less
 
 clear
@@ -66,7 +66,7 @@ typing=(
 )
 selected_site="${typing[RANDOM % ${#typing[@]}]}"
 echo "Opening ${selected_site} for typing practice..."
-/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe "$selected_site"
+/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe --app="$selected_site"
 echo ""
 read -p "Press enter to continue..."
 
