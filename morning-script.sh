@@ -3,19 +3,14 @@
 clear
 figlet "Good morning!" | lolcat
 
-echo "What will you be reading today? Last time you read:"
-cat ~/.scripts/cache/morning-script.txt
-read BIBLE_INPUT
-echo $BIBLE_INPUT >~/.scripts/cache/morning-script.txt
-bible $BIBLE_INPUT | less
+# echo "What will you be reading today? Last time you read:"
+# cat ~/.scripts/cache/morning-script.txt
+# read BIBLE_INPUT
+# echo $BIBLE_INPUT >~/.scripts/cache/morning-script.txt
+# bible $BIBLE_INPUT | less
 
 clear
 echo "Review Todoist"
-echo " "
-read -p "Press enter to continue..."
-
-clear
-echo "Prepare today's calendar"
 echo " "
 read -p "Press enter to continue..."
 
@@ -60,8 +55,8 @@ read -p "Press enter to continue..."
 clear
 typing=(
   "https://monkeytype.com"
-  "https://www.typelit.io/"
-  "https://bibletyper.app/myplan"
+  # "https://www.typelit.io/"
+  # "https://bibletyper.app/myplan"
   #"https://10fastfingers.com/top1000#top1000"
 )
 selected_site="${typing[RANDOM % ${#typing[@]}]}"
